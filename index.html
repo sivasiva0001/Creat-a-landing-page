@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saraswathi Textiles - Kanchi Pattu Sarees</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: maroon;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .hero {
+      text-align: center;
+      padding: 30px 15px;
+      background: #fbe9e7;
+    }
+    .hero h2 { color: maroon; }
+    .search-bar {
+      text-align: center;
+      margin: 20px;
+    }
+    .search-bar input {
+      padding: 10px;
+      font-size: 16px;
+      width: 80%;
+      max-width: 300px;
+      border: 2px solid maroon;
+      border-radius: 8px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .saree-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      background: white;
+      transition: transform 0.2s;
+    }
+    .saree-card:hover { transform: scale(1.05); }
+    .saree-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+    .saree-info { padding: 10px; text-align: center; }
+    .saree-info h3 { margin: 5px 0; font-size: 18px; color: maroon; }
+    .price { font-size: 18px; font-weight: bold; color: green; margin: 8px 0; }
+    .saree-actions { text-align: center; margin-bottom: 12px; }
+    .saree-actions a button {
+      padding: 8px 12px;
+      margin: 5px;
+      background: maroon;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🪔 Saraswathi Textiles 🪔</h1>
+    <p>Kanchi Pattu Sarees | Hand Made Sarees</p>
+  </header>
+
+  <section class="hero">
+    <h2>Pure Kanchipuram Pattu Sarees in 25+ Colors ✨</h2>
+    <p>Price Range: ₹25,000 – ₹1,00,000 💰</p>
+  </section>
+
+  <!-- Search Filter -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by color (e.g. Yellow, Red, Blue)...">
+  </div>
+
+  <!-- Saree Gallery -->
+  <section class="gallery" id="sareeGallery">
+
+    <!-- Example Saree Cards (repeat for 25 colors) -->
+    <div class="saree-card" data-color="Yellow">
+      <img src="images/yellow-saree.jpg" alt="Yellow Saree">
+      <div class="saree-info">
+        <h3>Yellow Saree</h3>
+        <p>Designer Border</p>
+        <p class="price">₹25,000</p>
+      </div>
+      <div class="saree-actions">
+        <a href="https://wa.me/910000011111?text=I want Yellow Saree (₹25000)" target="_blank"><button>💬 WhatsApp</button></a>
+        <a href="tel:+910000011111"><button>📞 Call</button></a>
+      </div>
+    </div>
+
+    <div class="saree-card" data-color="Red">
+      <img src="images/red-saree.jpg" alt="Red Saree">
+      <div class="saree-info">
+        <h3>Red Saree</h3>
+        <p>Traditional Silk</p>
+        <p class="price">₹55,000</p>
+      </div>
+      <div class="saree-actions">
+        <a href="https://wa.me/910000011111?text=I want Red Saree (₹55000)" target="_blank"><button>💬 WhatsApp</button></a>
+        <a href="tel:+910000011111"><button>📞 Call</button></a>
+      </div>
+    </div>
+
+    <div class="saree-card" data-color="Blue">
+      <img src="images/blue-saree.jpg" alt="Blue Saree">
+      <div class="saree-info">
+        <h3>Blue Saree</h3>
+        <p>Silver Zari Rich Look</p>
+        <p class="price">₹70,000</p>
+      </div>
+      <div class="saree-actions">
+        <a href="https://wa.me/910000011111?text=I want Blue Saree (₹70000)" target="_blank"><button>💬 WhatsApp</button></a>
+        <a href="tel:+910000011111"><button>📞 Call</button></a>
+      </div>
+    </div>
+
+    <!-- 👉 Repeat same structure for more sarees -->
+    <div class="saree-card" data-color="Green"><img src="images/green-saree.jpg" alt="Green Saree"><div class="saree-info"><h3>Green Saree</h3><p>Temple Border</p><p class="price">₹45,000</p></div><div class="saree-actions"><a href="https://wa.me/910000011111?text=I want Green Saree (₹45000)" target="_blank"><button>💬 WhatsApp</button></a><a href="tel:+910000011111"><button>📞 Call</button></a></div></div>
+
+    <div class="saree-card" data-color="Pink"><img src="images/pink-saree.jpg" alt="Pink Saree"><div class="saree-info"><h3>Pink Saree</h3><p>Bridal Collection</p><p class="price">₹80,000</p></div><div class="saree-actions"><a href="https://wa.me/910000011111?text=I want Pink Saree (₹80000)" target="_blank"><button>💬 WhatsApp</button></a><a href="tel:+910000011111"><button>📞 Call</button></a></div></div>
+
+    <div class="saree-card" data-color="Black"><img src="images/black-saree.jpg" alt="Black Saree"><div class="saree-info"><h3>Black Saree</h3><p>Modern Contrast Border</p><p class="price">₹65,000</p></div><div class="saree-actions"><a href="https://wa.me/910000011111?text=I want Black Saree (₹65000)" target="_blank"><button>💬 WhatsApp</button></a><a href="tel:+910000011111"><button>📞 Call</button></a></div></div>
+
+    <!-- Keep adding more cards... (Purple, Violet, Orange, Cream, Grey, Silver, Gold, Maroon, Brown, Sky Blue, Navy Blue, Rani Pink, Lavender, Mustard, Turquoise, Peach, Multi-Color etc up to 25+) -->
+
+  </section>
+
+  <footer>
+    <p>📍 Address: Gandi Street, Kanchipuram</p>
+    <p>📞 Phone / WhatsApp: 00000 11111</p>
+    <p>© 2025 Saraswathi Textiles | Handmade Elegance</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const sareeCards = document.querySelectorAll('.saree-card');
+
+    searchInput.addEventListener('keyup', function() {
+      const filter = searchInput.value.toLowerCase();
+      sareeCards.forEach(card => {
+        const color = card.getAttribute('data-color').toLowerCase();
+        if (color.includes(filter)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
